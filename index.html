@@ -13,13 +13,33 @@
 
 <body>
 
-    <div id="viewer">
+    <div id="container">
 
-        <object
-            id="svgObject"
-            data="ER5215-301.svg"
-            type="image/svg+xml">
-        </object>
+        <!-- Área del SVG -->
+        <div id="viewer">
+
+            <object
+                id="svgObject"
+                data="ER5215-301.svg"
+                type="image/svg+xml">
+            </object>
+
+        </div>
+
+        <!-- Panel lateral -->
+        <div id="infoPanel">
+
+            <h2>Información del componente</h2>
+
+            <hr>
+
+            <p><strong>Código:</strong></p>
+            <p id="codigo">----------</p>
+
+            <p><strong>Descripción:</strong></p>
+            <p id="descripcion">----------</p>
+
+        </div>
 
     </div>
 
