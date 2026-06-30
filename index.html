@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
 
-    <title>Visor SVG</title>
+    <title>SDTD - Sistema de Documentación Técnica Digital</title>
 
     <link rel="stylesheet" href="style.css">
 
@@ -13,9 +13,24 @@
 
 <body>
 
-    <div id="container">
+<div id="container">
 
-        <!-- Área del SVG -->
+    <!-- ÁREA PRINCIPAL -->
+
+    <div id="viewerArea">
+
+        <div id="topBar">
+
+            <div id="projectTitle">
+
+                <h1>Bucket Elevator</h1>
+
+                <p>ER5215</p>
+
+            </div>
+
+        </div>
+
         <div id="viewer">
 
             <object
@@ -26,24 +41,99 @@
 
         </div>
 
-        <!-- Panel lateral -->
-        <div id="infoPanel">
+    </div>
 
-            <h2>Información del componente</h2>
+    <!-- PANEL LATERAL -->
 
-            <hr>
+    <div id="infoPanel">
 
-            <p><strong>Código:</strong></p>
-            <p id="codigo">----------</p>
+        <div id="company">
 
-            <p><strong>Descripción:</strong></p>
-            <p id="descripcion">----------</p>
+            <img src="logo.png" id="logo">
+
+            <h2>RAD Equipment</h2>
 
         </div>
 
+        <hr>
+
+        <h3 id="codigoTitulo">
+
+            Código
+
+        </h3>
+
+        <p id="codigo">
+
+            --------
+
+        </p>
+
+        <h3>
+
+            Descripción
+
+        </h3>
+
+        <p id="descripcion">
+
+            Seleccione un componente
+
+        </p>
+
+        <div id="imagePlaceholder">
+
+            Imagen
+
+        </div>
+
+        <div class="info">
+
+            <strong>Peso</strong>
+
+            <span>------</span>
+
+        </div>
+
+        <div class="info">
+
+            <strong>Material</strong>
+
+            <span>------</span>
+
+        </div>
+
+        <div class="info">
+
+            <strong>Cantidad</strong>
+
+            <span>------</span>
+
+        </div>
+
+        <button class="panelButton">
+
+            📄 Ficha Técnica
+
+        </button>
+
+        <button class="panelButton">
+
+            🔧 Ver Subensamble
+
+        </button>
+
+        <button class="panelButton">
+
+            ✉ Solicitar Cotización
+
+        </button>
+
     </div>
 
-    <script src="script.js"></script>
+</div>
+
+<script src="script.js"></script>
 
 </body>
 
